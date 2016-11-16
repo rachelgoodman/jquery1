@@ -16,9 +16,14 @@ function show() {
   $('.jumbotron').slideDown();
 }
 
+
 $(document).ready(function() {
   $('.jumbotron').on('mouseenter', highlight);
-});
-$(document).ready(function() {
   $('.jumbotron').on('mouseleave', unhighlight);
+  $('.hide-jumbotron').on('click', hide);
+  $('.show-jumbotron').on('click', show);
 });
+
+
+
+$()
